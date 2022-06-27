@@ -1,0 +1,64 @@
+.form {
+    h1 {
+        margin-bottom: 20px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        label {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        input {
+            height: 48px;
+            background: #111112;
+            border: 2px solid darkgrey;
+            padding: 20px;
+            color: #fff;
+        }
+        input:focus {
+            outline: cyan;
+            border: 2px solid cyan;
+        }
+        textarea {
+            // height: 48px;
+            background: #111112;
+            border: 2px solid darkgrey;
+            padding: 20px;
+            color: #fff;
+            resize: none;
+        }
+        textarea:focus {
+            outline: cyan;
+            border: 2px solid cyan;
+        }
+        
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1; /* Firefox */
+          }
+          
+          :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #fff;
+          }
+          
+          ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #fff;
+          }
+    }
+    button {
+        width: 100%;
+        padding: 10px 0;
+        margin: 30px 0;
+        cursor: pointer;
+        font-size: 28px;
+        background: cyan;
+        border: 2px solid #000;
+        // color: #fff;
+    }
+    button:hover{
+        border: 2px solid cyan;
+        background: transparent;
+        color: #fff;
+    }
+}

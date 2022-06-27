@@ -1,0 +1,78 @@
+// @import "bulma/sass/utilities/_all.sass";
+// @import "bulma/sass/elements/button.sass";
+// @import '~bulma/bulma.sass';
+.Home {
+    max-width: 1240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+    padding: 50px 0;
+}
+.app-container {
+    .greetings { font-size:  48px ;}
+    .intro { font-size: 36px;}
+    .name { color:cyan; font-size: 48px; font-weight: 800; }
+    .description { 
+        color: darkgrey; 
+        max-width: 750px; 
+        margin: 20px 0;
+        line-height: 24px;
+        font-size: 16px;
+    }
+    .design {
+        padding: 50px 0;
+        .more-stuffs {
+            font-size: 72px;
+            max-width: 380px;
+            font-weight: 700;
+        }
+        .solution {
+            font-size: 16px;
+            line-height: 24px;
+            margin: 20px 0;
+            color: cyan;
+            font-weight: 600;
+        }
+    }
+    .tech_socials {
+        .tech {
+            display: flex;
+            a {
+                margin-left: 10px;
+                color: cyan;
+            }
+            a:hover {
+                transform: skew(3);
+            }
+        }
+        .find {
+            margin-top: 15px;
+        }
+        .socials {
+            display: flex;
+            a {
+                margin-left: 10px;
+                color: cyan;
+            }
+            a:hover {
+                transform: skew(3);
+            }
+        }
+    }
+    .resume {
+        margin-top: 20px;
+        a {
+            font-style: italic;
+            color: cyan;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .Home {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
